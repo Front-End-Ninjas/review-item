@@ -1,10 +1,12 @@
 import React from 'react';
 import ReviewEntry from './ReviewEntry';
 
-class Review extends React.Component {  // eslint-disable-line 
-//                                         will add in state after- need to store data
-  constructor(props) {                  // eslint-disable-line
+class Review extends React.Component {
+  constructor(props) {
     super(props);
+    this.state = {
+      data: 'test',
+    };
   }
   render() {
     return (
