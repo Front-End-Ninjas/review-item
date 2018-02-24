@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review component should render correctly 1`] = `
+<div>
+  <table
+    id="table"
+  >
+    <tbody
+      id="tbody"
+    >
+      <tr>
+        <td
+          id="username"
+        >
+          abartoletti8
+        </td>
+      </tr>
+      <tr>
+        <td
+          id="star"
+        >
+          5
+           star: 
+        </td>
+        <td
+          id="reviewTitle"
+        >
+          great
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="data"
+        >
+          4/10/2017
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="purchased"
+        >
+          
+           
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+        >
+          This product is wonderful. best product ever!
+           
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table
+    id="table"
+  >
+    <tbody
+      id="tbody"
+    >
+      <tr>
+        <td
+          id="username"
+        >
+          wdalby7
+        </td>
+      </tr>
+      <tr>
+        <td
+          id="star"
+        >
+          5
+           star: 
+        </td>
+        <td
+          id="reviewTitle"
+        >
+          wonderful
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="data"
+        >
+          11/11/2017
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="purchased"
+        >
+          Verified Purchase
+           
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+        >
+          This product is tony. its greeeeeeaaaat!
+           
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
