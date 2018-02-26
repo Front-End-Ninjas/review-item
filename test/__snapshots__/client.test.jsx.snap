@@ -12,20 +12,20 @@ exports[`Review component should render correctly 1`] = `
         <td
           id="username"
         >
-          abartoletti8
+          upardoec
         </td>
       </tr>
       <tr>
         <td
           id="star"
         >
-          5
+          3
            star: 
         </td>
         <td
           id="reviewTitle"
         >
-          great
+          okay
         </td>
       </tr>
       <tr>
@@ -33,60 +33,7 @@ exports[`Review component should render correctly 1`] = `
           colSpan="2"
           id="data"
         >
-          4/10/2017
-        </td>
-      </tr>
-      <tr>
-        <td
-          colSpan="2"
-          id="purchased"
-        >
-          
-           
-        </td>
-      </tr>
-      <tr>
-        <td
-          colSpan="2"
-        >
-          This product is wonderful. best product ever!
-           
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <table
-    id="table"
-  >
-    <tbody
-      id="tbody"
-    >
-      <tr>
-        <td
-          id="username"
-        >
-          wdalby7
-        </td>
-      </tr>
-      <tr>
-        <td
-          id="star"
-        >
-          5
-           star: 
-        </td>
-        <td
-          id="reviewTitle"
-        >
-          wonderful
-        </td>
-      </tr>
-      <tr>
-        <td
-          colSpan="2"
-          id="data"
-        >
-          11/11/2017
+          1/9/2017
         </td>
       </tr>
       <tr>
@@ -102,7 +49,7 @@ exports[`Review component should render correctly 1`] = `
         <td
           colSpan="2"
         >
-          This product is tony. its greeeeeeaaaat!
+          This product is so-so
            
         </td>
       </tr>
