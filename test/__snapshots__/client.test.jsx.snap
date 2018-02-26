@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review component should render correctly 1`] = `
+<div>
+  <table
+    id="table"
+  >
+    <tbody
+      id="tbody"
+    >
+      <tr>
+        <td
+          id="username"
+        >
+          upardoec
+        </td>
+      </tr>
+      <tr>
+        <td
+          id="star"
+        >
+          3
+           star: 
+        </td>
+        <td
+          id="reviewTitle"
+        >
+          okay
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="data"
+        >
+          1/9/2017
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+          id="purchased"
+        >
+          Verified Purchase
+           
+        </td>
+      </tr>
+      <tr>
+        <td
+          colSpan="2"
+        >
+          This product is so-so
+           
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
