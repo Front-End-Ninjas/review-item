@@ -14,7 +14,7 @@ const ReviewEntry = ({
         <td id="reviewTitle">{data.reviewTitle}</td>
       </tr>
       <tr>
-        <td id="data" colSpan="2">{data.date}</td>
+        <td id="data" colSpan="2">{data.reviewDate}</td>
       </tr>
       <tr>
         <td id="purchased" colSpan="2">{(data.purchased) ? 'Verified Purchase' : ''} </td>
@@ -33,7 +33,7 @@ ReviewEntry.propTypes = {
     username: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     reviewTitle: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    reviewDate: PropTypes.string.isRequired,
     purchased: PropTypes.bool.isRequired,
     comment: PropTypes.string.isRequired,
   }).isRequired,

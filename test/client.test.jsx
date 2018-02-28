@@ -11,3 +11,9 @@ describe('Review component', () => {
     expect(tree).toMatchSnapshot();
   });
 });
+
+// describe('Seed data', () => {
+//   it('should contain data', () => {
+//     expect
+//   });
+// });
