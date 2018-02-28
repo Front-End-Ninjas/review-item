@@ -9,11 +9,11 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:9.5.0
         environment:
-          MONGO_URL: "mongodb://localhost/reviews"
+          MONGO_URL: "mongodb://localhost:1337/reviews"
           MONGODB_DATABASE: "reviews"
       - image: circleci/mongo:3.6.2
         environment:
-          MONGO_URL: "mongodb://localhost/reviews"
+          MONGO_URL: "mongodb://localhost:1337/reviews"
           MONGODB_DATABASE: "reviews"
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
