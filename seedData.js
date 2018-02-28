@@ -16,12 +16,8 @@ const seedDb = (seed) => {
         reviewDate: item.reviews[i].date,
         purchased: item.reviews[i].purchased,
       };
-      Reviews.insertOne(insertReview, (err, results) => {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log(results);
-        }
+      Reviews.insertOne(insertReview).catch((err) => {
+        console.error(err);
       });
     }
   });

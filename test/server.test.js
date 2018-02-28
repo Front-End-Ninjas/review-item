@@ -15,9 +15,11 @@ const reviewSchema = mongoose.Schema({
   purchased: Boolean,
 });
 
+const url = process.env.MONGO_URL || 'mongodb://localhost/reviews';
+
 describe('Mongo Database', () => {
   beforeAll(() => {
-    mongoose.connect('mongodb://localhost/reviews');
+    mongoose.connect(url);
     data.forEach((item) => {
       for (let i = 0; i < item.reviews.length; i += 1) {
         const insertReview = {
