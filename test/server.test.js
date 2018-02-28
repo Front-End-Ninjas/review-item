@@ -18,8 +18,6 @@ const reviewSchema = mongoose.Schema({
   purchased: Boolean,
 });
 
-const reviewModel = mongoose.model('Review', reviewSchema);
-
 describe('Mongo Database', () => {
   beforeAll(() => {
     seedDb(data);
