@@ -5,6 +5,21 @@ const data = require('../dummyData.js');
 
 mongoose.connect('mongodb://localhost/reviews');
 
+const reviewSchema = mongoose.Schema({
+  itemId: Number,
+  username: String,
+  rating: {
+    type: Number,
+    max: 5,
+  },
+  comment: String,
+  reviewTitle: String,
+  reviewDate: String,
+  purchased: Boolean,
+});
+
+const reviewModel = mongoose.model('Review', reviewSchema);
+
 describe('Mongo Database', () => {
   beforeAll(() => {
     seedDb(data);
