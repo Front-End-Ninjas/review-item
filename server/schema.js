@@ -28,8 +28,16 @@ function findAllReviews() {
   });
 }
 
-function insertOne(review, callback) {
-  reviewModel.create(review, callback);
+function insertOne(review) {
+  return new Promise((resolve, reject) => {
+    reviewModel.create(review, (err, result) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
 }
 
 exports.findAllReviews = findAllReviews;

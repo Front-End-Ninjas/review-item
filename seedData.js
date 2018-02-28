@@ -28,3 +28,5 @@ const seedDb = (seed) => {
 };
 
 seedDb(data);
+
+module.exports = seedDb;
