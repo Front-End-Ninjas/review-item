@@ -8,9 +8,11 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:9.5.0
+        environment:
+          MONGO_URL: "mongodb://localhost:27017/reviews"
       - image: circleci/mongo:3.6.2
-      environment:
-        MONGO_URL: "mongodb://localhost:27017/reviews"
+        environment:
+          MONGO_URL: "mongodb://localhost:27017/reviews"
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
