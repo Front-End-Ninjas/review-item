@@ -31,7 +31,7 @@ describe('Mongo Database', () => {
     seedDb(data, () => {
       Reviews.findAllReviews().then((result) => {
         const numberOfData = result.length;
-        expect(numberOfData).toBe(891);
+        expect(numberOfData).toBe(1);
       }).catch((err) => {
         console.error(err);
       });
