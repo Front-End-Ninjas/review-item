@@ -9,6 +9,13 @@ exports[`Review component should render correctly 1`] = `
       id="tbody"
     >
       <tr>
+        <td>
+          <img
+            alt="avatar"
+            id="avatar"
+            src="images/avatar.png"
+          />
+        </td>
         <td
           id="username"
         >
@@ -19,8 +26,31 @@ exports[`Review component should render correctly 1`] = `
         <td
           id="star"
         >
-          4
-           star: 
+          <img
+            alt="star"
+            id="stars"
+            src="images/star.png"
+          />
+          <img
+            alt="star"
+            id="stars"
+            src="images/star.png"
+          />
+          <img
+            alt="star"
+            id="stars"
+            src="images/star.png"
+          />
+          <img
+            alt="star"
+            id="stars"
+            src="images/star.png"
+          />
+          <img
+            alt="emptyStar"
+            id="stars"
+            src="images/emptyStar.png"
+          />
         </td>
         <td
           id="reviewTitle"

@@ -4,7 +4,7 @@ const Reviews = require('./server/schema.js');
 
 mongoose.connect('mongodb://localhost/reviews');
 
-const seedDb = (seed) => {
+const seedDb = (seed, callback) => {
   seed.forEach((item) => {
     for (let i = 0; i < item.reviews.length; i += 1) {
       const insertReview = {
@@ -16,7 +16,14 @@ const seedDb = (seed) => {
         reviewDate: item.reviews[i].date,
         purchased: item.reviews[i].purchased,
       };
-      Reviews.insertOne(insertReview).catch((err) => {
+      let counter = seed.length;
+      Reviews.insertOne(insertReview).then((result) => {
+        counter -= 1;
+        console.log(result);
+        if (counter === 0) {
+          callback();
+        }
+      }).catch((err) => {
         console.error(err);
       });
     }
