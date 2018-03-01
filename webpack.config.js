@@ -10,6 +10,12 @@ module.exports = {
     rules: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
     ],
+    loaders: [
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=25000',
+      },
+    ],
   },
   resolve: { extensions: ['.jsx', '.js'] },
 };

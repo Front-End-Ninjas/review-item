@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/Front-End-Ninjas/review-item#readme",
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "jquery": "^3.3.1",
     "mongoose": "^5.0.6",
+    "nodemon": "^1.17.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
