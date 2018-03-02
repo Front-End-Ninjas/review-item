@@ -11,10 +11,10 @@ const ReviewEntry = ({
   let count = data.rating;
   for (let i = 0; i < 5; i += 1) {
     if (count !== 0) {
-      stars.push(<Stars />);
+      stars.push(<Stars key={i} />);
       count -= 1;
     } else {
-      stars.push(<NoStars />);
+      stars.push(<NoStars key={i} />);
     }
   }
   return (

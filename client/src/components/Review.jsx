@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 import ReviewEntry from './ReviewEntry';
-// import itemData from '../../../dummyData';
 
 class Review extends React.Component {
   constructor(props) {

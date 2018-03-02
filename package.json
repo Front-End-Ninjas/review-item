@@ -30,6 +30,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
@@ -45,12 +46,17 @@
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0",
+    "superagent": "^3.8.2",
+    "supertest": "^3.0.0",
     "webpack": "^3.11.0"
   },
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "**/*.{js,jsx}"
+      "client/src/components/*.jsx",
+      "server/app.js",
+      "server/routes.js",
+      "server/schema.js"
     ]
   }
 }
