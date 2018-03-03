@@ -329,7 +329,7 @@ let boolean = [true, false];
 
 
 itemData.forEach(item => {
-  let numberOfReviews = Math.ceil(Math.random() * 5);
+  let numberOfReviews = Math.ceil((Math.random() * 3) + 2;
   item.reviews = []
   for (let i = 0; i < numberOfReviews; i++){
     let oneReview = {}
