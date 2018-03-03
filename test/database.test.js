@@ -10,14 +10,14 @@ describe('Mongo Database', () => {
     mongoose.connect(url);
   });
   afterAll(() => {
-    mongoose.disconnect();
+    mongoose.disconnect(url);
   });
 
   it('should have reviews', () => (
     seedDb(data, () => {
       Reviews.findAllReviews().then((result) => {
         const numberOfData = result.length;
-        expect(numberOfData).toBe(1);
+        expect(numberOfData).toBe(200);
       }).catch((err) => {
         console.error(err);
       });

@@ -12,3 +12,13 @@ describe('Server Test', () => {
         return request(app).get('/pages').expect(404);
     });
 });
+
+
+describe('Server Test', () => {
+    test('It should respond with correct item ID', (done) => {
+        request(app).get('/item/20/reviews').then((response) => {
+            expect(response.body[0].itemId).toBe(20);
+            done();
+        });
+    });
+});
