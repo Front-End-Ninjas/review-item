@@ -19,7 +19,7 @@ class Review extends React.Component {
   }
 
   componentDidMount() {
-    this.fetcher(12, (results) => {
+    this.fetcher(10, (results) => {
       this.setState({
         data: results,
       });
