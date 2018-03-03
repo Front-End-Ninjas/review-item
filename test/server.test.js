@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../server/app')
+const app = require('../server/app');
 
 describe('Server Test', () => {
     test('It should respond with 200 when item is found', () => {
