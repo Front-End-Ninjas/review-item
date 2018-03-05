@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "watch": "webpack -d --watch"
+    "watch": "webpack -d --watch",
+    "seed": "node seedData.js",
+    "server": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
