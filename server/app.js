@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 const reviewRouter = require('./routes.js');
 const mongoose = require('mongoose');
@@ -13,4 +13,4 @@ app.use(express.static(path.join(__dirname, '/../client/dist')));
 
 app.use('/item', reviewRouter);
 
-module.exports = app
+module.exports = app;
