@@ -1,39 +1,16 @@
-const mongoose = require('mongoose');
-const Reviews = require('../server/schema.js');
+const request = require('supertest');
+const app = require('../server/app');
+const seedData = require('../seedData.js');
 const data = require('../dummyData.js');
-const seedDb = require('../seedData.js');
 
-
-const reviewSchema = mongoose.Schema({
-  itemId: Number,
-  username: String,
-  rating: {
-    type: Number,
-    max: 5,
-  },
-  comment: String,
-  reviewTitle: String,
-  reviewDate: String,
-  purchased: Boolean,
-});
-
-const url = process.env.MONGO_URL || 'mongodb://localhost/reviews';
-
-describe('Mongo Database', () => {
-  beforeAll(() => {
-    mongoose.connect(url);
+describe('Server Test', () => {
+  test('It should respond with 200 when item is found', () => {
+    return request(app).get('/item/1/reviews').expect(200);
   });
-  afterAll(() => {
-    mongoose.disconnect();
-  });
+})
 
-  it('should have reviews', () => (
-    seedDb(data, () => {
-      Reviews.findAllReviews().then((result) => {
-        const numberOfData = result.length;
-        expect(numberOfData).toBe(1);
-      }).catch((err) => {
-        console.error(err);
-      });
-    })));
+describe('Server Test', () => {
+  test('It should respond with 404 when not found', () => {
+    return request(app).get('/pages').expect(404);
+  });
 });

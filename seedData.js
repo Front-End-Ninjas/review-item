@@ -19,7 +19,6 @@ const seedDb = (seed, callback) => {
       let counter = seed.length;
       Reviews.insertOne(insertReview).then((result) => {
         counter -= 1;
-        console.log(result);
         if (counter === 0) {
           callback();
         }

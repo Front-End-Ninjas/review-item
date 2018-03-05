@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 import ReviewEntry from './ReviewEntry';
-// import itemData from '../../../dummyData';
 
 class Review extends React.Component {
   constructor(props) {
@@ -20,7 +19,7 @@ class Review extends React.Component {
   }
 
   componentDidMount() {
-    this.fetcher(12, (results) => {
+    this.fetcher(10, (results) => {
       this.setState({
         data: results,
       });
