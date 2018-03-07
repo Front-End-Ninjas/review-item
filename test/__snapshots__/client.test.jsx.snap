@@ -13,7 +13,7 @@ exports[`Review component should render correctly 1`] = `
           <img
             alt="avatar"
             id="avatar"
-            src="images/avatar.png"
+            src="http://localhost:1337/images/avatar.png"
           />
         </td>
         <td
@@ -29,27 +29,27 @@ exports[`Review component should render correctly 1`] = `
           <img
             alt="star"
             id="stars"
-            src="images/star.png"
+            src="http://localhost:1337/images/star.png"
           />
           <img
             alt="star"
             id="stars"
-            src="images/star.png"
+            src="http://localhost:1337/images/star.png"
           />
           <img
             alt="star"
             id="stars"
-            src="images/star.png"
+            src="http://localhost:1337/images/star.png"
           />
           <img
             alt="star"
             id="stars"
-            src="images/star.png"
+            src="http://localhost:1337/images/star.png"
           />
           <img
             alt="emptyStar"
             id="stars"
-            src="images/emptyStar.png"
+            src="http://localhost:1337/images/emptyStar.png"
           />
         </td>
         <td
