@@ -35,3 +35,7 @@
   height: 40px;
   align-content: center;
 }
+
+body {
+  font-family: Helvetica;
+}
