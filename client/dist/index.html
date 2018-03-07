@@ -1,10 +1,19 @@
 <html>
   <head>
     <h1>Customer Reviews</h1>
-    <link type="text/css" href="./index.css" rel="stylesheet" />
+    <link type="text/css" href="index.css" rel="stylesheet" />
   </head>
   <body>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <div id="root"/>
     <script src="bundle.js"></script>
   </body>
+    <script>
+      const itemNumber = window.location.search.slice(4) || 0;
+      ReactDOM.render(
+        React.createElement(Review, {id: itemNumber}, null),
+        document.getElementById('root')
+      );
+    </script>
 </html>
